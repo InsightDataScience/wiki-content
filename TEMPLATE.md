@@ -5,7 +5,7 @@ Write an introduction for the topic you are covering. Think about what informati
 
 
 ## How to use 
-Outline common uses of this topic, focusing on real life deployments and explames. Link to articles and videos to provide more information. 
+Outline common uses of this topic, focusing on real life deployments and examples. Link to articles and videos to provide more information.
 
 Bonus points for making it Insight specific.
 
