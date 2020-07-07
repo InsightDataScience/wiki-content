@@ -11,7 +11,7 @@ IAM has many internal items, major among them are:
  - Roles
  - Policies
 
-<p align="center"> <img src="assets/IAM-overview.png" width="500" height="800"> </p>
+<p align="center"> <img src="assets/IAM-overview.png" width="800" height="500"> </p>
 
 ## How to use 
 Let me start with an example. Imagine you want to create an S3 bucket using AWS CLI. Assuming you have installed AWS CLI on your local machine, you can write ```aws s3 mb s3://new_bucket``` on your terminal. For the S3 bucket to be created, many steps must be completed on the backend side, which many of them directly involve IAM service. After checking your credentials by AWS CLI, it makes a call with the provided credentials. Here is when AWS IAM service enters into the picture, it first checks if you are authenticated (e.g. check if API key/secret combination is correct and exists in IAM database), then it evaluates if you are authorized to perform such task (checking policies attached to your IAM account to see if you have permission to access S3 and create a bucket).If you are authenticated and authorized, then your call will go to AWS S3 API and a new bucket will be created and a response will be sent to you. 
