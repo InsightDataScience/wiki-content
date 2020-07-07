@@ -6,6 +6,9 @@ The name Kubernetes originates from Greek, meaning helmsman or pilot. Google ope
 
 ## Comparing the Deployment era 
 
+
+![](images/Comparing_deployments.png "Different Deployments over the years")
+
 Traditional deployment era: Early on, organizations ran applications on physical servers. There was no way to define resource boundaries for applications in a physical server, and this caused resource allocation issues. For example, if multiple applications run on a physical server, there can be instances where one application would take up most of the resources, and as a result, the other applications would underperform. A solution for this would be to run each application on a different physical server. But this did not scale as resources were underutilized, and it was expensive for organizations to maintain many physical servers.
 
 Virtualized deployment era: As a solution, virtualization was introduced. It allows you to run multiple Virtual Machines (VMs) on a single physical server's CPU. Virtualization allows applications to be isolated between VMs and provides a level of security as the information of one application cannot be freely accessed by another application.
@@ -55,6 +58,9 @@ Kubernetes lets you store and manage sensitive information, such as passwords, O
 
 
 ## Kubernetes Components
+
+
+![](images/all_components.png "Kubernetes Components")
 
 When you deploy Kubernetes, you get a cluster.A Kubernetes cluster consists of a set of worker machines, called nodes, that run containerized applications. Every cluster has at least one worker node.
 
