@@ -23,9 +23,3 @@ Let me start with an example. Imagine you want to create an S3 bucket using AWS 
 
 
 
-## Pain Points 
-- Identify current problems and paint points surround this topic / tool. What problems are people looking to solve around or with this topic/tool?
-- 
-
-
-
