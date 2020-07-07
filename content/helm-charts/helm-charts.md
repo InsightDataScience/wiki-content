@@ -32,6 +32,7 @@ Check [here](https://helm.sh/docs/intro/) for basic Helm installation directions
 
 ### Helm Charts
 After installing Helm, you can easily install helm charts from the official repository using the following command
+
 `helm install stable/chart_name`
 
 ## Helm Charts File Structure
@@ -99,4 +100,4 @@ Click [here](https://helm.sh/docs/intro/using_helm/) to learn how to use helm ch
 - YouTube Video         - https://youtu.be/-ykwb1d0DXU
 
 ## Pain Points 
-The Helm Charts are not completely stable and major changes are expected that may disrupt the existing projects.
+The Helm Charts are not completely stable and major changes are expected that may disrupt existing projects.
