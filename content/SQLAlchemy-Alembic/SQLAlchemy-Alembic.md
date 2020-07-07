@@ -27,19 +27,14 @@ Write an introduction for the topic you are covering. Think about what informati
 
 
 ## How to use 
-Outline common uses of this topic, focusing on real life deployments and examples. Link to articles and videos to provide more information.
-
-Bonus points for making it Insight specific.
+- Installation : for pyhon ,it is [pip install SQLAlchemy](https://pypi.org/project/SQLAlchemy/)
 
 
 ## Resources 
-- Everyone has to start somewhere, provide a short blurb for ANY turorials you found helpful, link to the tutorial, and any connected Codebases. 
-- Youtube videos, Important documentation, etc.
-- Please don't include out of date / bad resources.  This should be a best of list with
 
-Example:
-- [Some really awesome tutorial](https://towardsdatascience.com/getting-started-with-apache-airflow-df1aa77d7b1b)
-    - This tutorial is about XYZ...
+
+- [Basic tutorial from tutorialspoint](https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_introduction.htm)
+    - This tutorial gives simple examples for using SQLAlchemy for queries,joins deletes etc. and then mentions how to declare tables in class format , creating sessions and adding objects etc.
 
 
 ## Pain Points 
