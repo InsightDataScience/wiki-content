@@ -21,16 +21,82 @@ Schema migrations, for example when you need to add a new column to an existing 
    
 
  
-![](https://www.fullstackpython.com/img/visuals/orm-examples.png)
 
-Write an introduction for the topic you are covering. Think about what information does a user need to know to understand the fundamentals of the topic. Diagrams and flowcharts are a plus. 
 
 
 ## How to use 
 - Installation : for pyhon ,it is [pip install SQLAlchemy](https://pypi.org/project/SQLAlchemy/)
->>> from sqlalchemy import create_engine
-
->>> engine = create_engine('sqlite:///:memory:', echo=True)
+ Code example:
+ ```
+ 
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+import os
+ 
+from sqlalchemy import Column, DateTime, String, Integer, ForeignKey, func
+from sqlalchemy.orm import relationship, backref
+from sqlalchemy.ext.declarative import declarative_base
+ 
+ 
+Base = declarative_base()
+ 
+ 
+class Department(Base):
+    __tablename__ = 'department'
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+ 
+ 
+class Employee(Base):
+    __tablename__ = 'employee'
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    hired_on = Column(DateTime, default=func.now())
+ 
+ 
+db_name = 'alembic_sample.sqlite'
+if os.path.exists(db_name):
+    os.remove(db_name)
+ 
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///' + db_name)
+ 
+from sqlalchemy.orm import sessionmaker
+session = sessionmaker()
+session.configure(bind=engine)
+Base.metadata.create_all(engine)
+```
 
 
 ## Resources 
