@@ -10,9 +10,9 @@ Outline common uses of this topic, focusing on real life deployments and explame
 Bonus points for making it Insight specific.
 
 
-## Tutorials 
+## Resources 
 - Everyone has to start somewhere, provide a short blurb for ANY turorials you found helpful, link to the tutorial, and any connected Codebases. 
-- Next tutorial 
+- Youtube videos, Important documentation, etc.
 
 
 ## Pain Points 
