@@ -5,7 +5,7 @@
 Outline common uses of this topic, focusing on real life deployments and explames. Link to articles and videos to provide more information. 
 
 Bonus points for making it Insight specific.
-![Fig 1: Kubeflow](/kubeflow.PNG)
+![Fig 1: Kubeflow](/content/kubeflow/kubeflow.PNG)
 
 ## Resources 
 https://www.kubeflow.org/docs/started/kubeflow-overview/
