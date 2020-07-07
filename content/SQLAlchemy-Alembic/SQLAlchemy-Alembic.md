@@ -16,6 +16,8 @@ Object-relational-mapping is the idea of being able to write queries using the o
    - what problems to ORMs solve?
      - ORM implementation classes know how to write vendor-specific SQL, so you don't have to.
      - (From DevOps perspective)Deployment: Pushing the app that can roll out its own database schema from its own code is a modern approach when everything including infrastructure should be a code.
+     -Schema migrations : 
+Schema migrations, for example when you need to add a new column to an existing table in your database, are not technically part of ORMs. However, since ORMs typically lead to a hands-off approach to the database, libraries to perform schema migrations often go hand-in-hand with ORM usage on web application projects.
    
 
 Duplicate this page when creating a new wiki entry. 
