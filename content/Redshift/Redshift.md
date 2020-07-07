@@ -1,16 +1,15 @@
 # What is Amazon Redshift?
-Amazon Redshift is a cloud-based data warehouse designed for large scale data sets. It was created to take on a lot of the issues previous data warehouses had and drastically improve on them. It does this with specific design decisions such as being columnar focused, having the ability to scale horizontally across multiple nodes, and massively parallel processing. Each of these specific design decisions has allowed AWS to develop a data storage system that operates very differently from your traditional RDBMS.
+Amazon Redshift is a cloud-based relational database system built on PostgreSQL principles. It’s optimized for performing online analytical processing (“OLAP”) queries efficiently over petabytes of data. The query handling efficiency is achieved through the combination of:
+- highly parallel processing
+- a columnar database design
+- data compression of columns
 
-# High-Level Architecture
-### Column-oriented database
-As opposed to traditional database management systems, Redshift stores data by column. By partitioning data column-wise each time, you can retrieve a value, which also implies that a single value per partition reduces the load from the hard disk — thus resulting in faster speeds for massive amounts of data. In addition, with Redshift there’s also the concept of compression.
-By compressing columns that are the same value it further improves the I/O because all the data is the same data type per column. This does require the developer to set the correct compression type per the data type.
-### Redshift clustering
-Every redshift cluster comprises of multiple machines which store a fraction of the data. These machines work in parallel, saving data so we can work upon it efficiently. Here, Redshift has some compute nodes that are managed by leader nodes to manage data distribution and query execution among the computing nodes. With this fraction dataset assigned to each node, Redshift performs efficiently. This also makes it horizontally scalable. Larger organizations can even use Redshift to operate with data in petabytes and beyond.
-### Massive Parallel Processing (MPP)
-In order to process data faster, Redshift employees the use of multiple compute nodes which allows the work to be broken up across nodes (depending on distribution), which can improve performance. This allows the Redshift architecture to offer maximum processing in minimum time.
+# Architecture
+The heart of each Redshift deployment is a cluster. Each cluster has a leader node and one or more compute nodes, all connected by high speed links. A leader node is the interface to your business intelligence application. It offers standard PostgreSQL JDBC/ODBC interfaces for queries and responses. It serves as the traffic cop directing queries from customer applications to the appropriate compute nodes, and manages the results returned. It also distributes ingested data into the compute nodes to build your databases.
 
-<p align="center"> <img src="assets/AmazonRedshift.png" width="800" height="500"> </p>
+<p align="center"> <img src="assets/AmazonRedshift.png"> </p>
+
+The Dense Compute (DC) nodes are meant for speed of query execution, with less storage, and is best for high performance activities. It is implemented with SSD drives. The Dense Storage (DS) nodes are for storing and querying big data, using typical hard disk drives.
 
 ## How to use 
 Outline common uses of this topic, focusing on real life deployments and explames. Link to articles and videos to provide more information. 
@@ -19,7 +18,7 @@ Bonus points for making it Insight specific.
 
 
 ## Resources 
-- Medium article: Building a Data Warehouse on Amazon Redshift [Link](https://medium.com/better-programming/building-a-data-warehouse-on-amazon-redshift-49a620a5392f)
+- Medium article: Amazon Redshift: Data Warehousing for the Masses [Link](https://medium.com/intermix-io/amazon-redshift-data-warehousing-for-the-masses-ea1642dc63ea)
 
 
 ## Pain Points 
