@@ -20,7 +20,7 @@ Object-relational-mapping is the idea of being able to write queries using the o
 Schema migrations, for example when you need to add a new column to an existing table in your database, are not technically part of ORMs. However, since ORMs typically lead to a hands-off approach to the database, libraries to perform schema migrations often go hand-in-hand with ORM usage on web application projects. You can for example, automate migrations for SQLAlchemy based changes in database using [Alembic](https://alembic.sqlalchemy.org/en/latest/).
    
 
-Duplicate this page when creating a new wiki entry. 
+ 
 ![](https://www.fullstackpython.com/img/visuals/orm-examples.png)
 
 Write an introduction for the topic you are covering. Think about what information does a user need to know to understand the fundamentals of the topic. Diagrams and flowcharts are a plus. 
@@ -28,6 +28,8 @@ Write an introduction for the topic you are covering. Think about what informati
 
 ## How to use 
 - Installation : for pyhon ,it is [pip install SQLAlchemy](https://pypi.org/project/SQLAlchemy/)
+>>> from sqlalchemy import create_engine
+>>> engine = create_engine('sqlite:///:memory:', echo=True)
 
 
 ## Resources 
