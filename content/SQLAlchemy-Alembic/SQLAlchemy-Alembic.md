@@ -25,7 +25,10 @@ Schema migrations, for example when you need to add a new column to an existing 
 
 
 ## How to use 
-- Installation : for pyhon ,it is [pip install SQLAlchemy](https://pypi.org/project/SQLAlchemy/)
+- Installation :
+
+for pyhon ,it is [pip install SQLAlchemy](https://pypi.org/project/SQLAlchemy/)
+
  Code example:
  ```
 import os
