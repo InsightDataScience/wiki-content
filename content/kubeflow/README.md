@@ -17,7 +17,7 @@ This is where data scientists can access Jupyter Notebooks which is a tool used 
 -Enables easier notebook sharing across the organization. Users can create notebook containers or pods directly in the cluster, rather than locally on their workstations. Admins can provide standard notebook images for their organization, and set up role-based access control (RBAC), Secrets and Credentials to manage which teams and individuals can access the notebooks.
 
 ## Fairing
-Kubeflow Fairing is a Python package that makes it easy to train and deploy ML models on Kubeflow. Kubeflow Fairing can also been extended to train or deploy on other platforms. Currently, Kubeflow Fairing has been extended to train on Google AI Platform.
+Kubeflow Fairing is a Python package that makes it easy to train and deploy ML models on Kubeflow. Kubeflow Fairing can also been extended to train or deploy on other platforms. 
 
 Kubeflow Fairing packages your Jupyter notebook, Python function, or Python file as a Docker image, then deploys and runs the training job on Kubeflow or AI Platform. After your training job is complete, you can use Kubeflow Fairing to deploy your trained model as a prediction endpoint on Kubeflow.
 
@@ -41,6 +41,7 @@ Easy re-use: enabling you to re-use components and pipelines to quickly create e
 
 ## Model Serving
 Kubeflow supports two model serving systems that allow multi-framework model serving: KFServing and Seldon Core. Alternatively, you can use a standalone model serving system.
+KFServing is built upon knative and istio while Seldon Core built upon kubernetes.
 
 ## How to use 
 - To install on AWS follow instructions from the following link: https://www.kubeflow.org/docs/aws/deploy/install-kubeflow/
@@ -49,7 +50,6 @@ Kubeflow supports two model serving systems that allow multi-framework model ser
 
 ## Resources 
 https://www.kubeflow.org/docs/started/kubeflow-overview/
-
 
 
 ## Pain Points 
