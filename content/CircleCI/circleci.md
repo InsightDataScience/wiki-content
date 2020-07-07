@@ -19,7 +19,7 @@ In the root of your repository create a .circleci folder and within the folder c
 
 for a simple python based environment in the CircleCi container the config.yml file can look like this:
 
-...
+```
 version: 2.1
 
 orbs:
@@ -49,7 +49,7 @@ workflows:
   main:
     jobs:
       - build-test-deploy
-...
+```
 
 
 The version is the version of CircleCI to use. it will most likely not change.
