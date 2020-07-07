@@ -180,5 +180,6 @@ You can get started with Amazon EKS using [eksctl](https://docs.aws.amazon.com/e
 ## Pain Points 
 
 - **Deploying EKS Cluster using Terraform**
-	-Take care about the IAM permissions after the Terraform apply command. If you working as IAM user in AWS, then make sure to give Full Access to the user otherwise it would prompt a  lot of errors.
+
+Take care about the IAM permissions after the Terraform apply command. If you working as IAM user in AWS, then make sure to give Full Access to the user otherwise it would prompt a  lot of errors.
 
