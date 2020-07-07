@@ -8,8 +8,8 @@ Bonus points for making it Insight specific.
 
 
 ## Resources 
-- Everyone has to start somewhere, provide a short blurb for ANY turorials you found helpful, link to the tutorial, and any connected Codebases. 
-- Youtube videos, Important documentation, etc.
+https://www.kubeflow.org/docs/started/kubeflow-overview/
+
 
 
 ## Pain Points 
