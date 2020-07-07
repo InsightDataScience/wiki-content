@@ -13,7 +13,9 @@ The Dashboard is a UI that provides access to some components of kubeflow such a
 
 ## Jupyter Notebook Server
 This is where data scientists can access Jupyter Notebooks which is a tool used to work on creating ML models. Advantages of having a notebook server on kubeflow are as follows:
+
 -Integrates well with the rest of the infrastructure with respect to authentication and access control.
+
 -Enables easier notebook sharing across the organization. Users can create notebook containers or pods directly in the cluster, rather than locally on their workstations. Admins can provide standard notebook images for their organization, and set up role-based access control (RBAC), Secrets and Credentials to manage which teams and individuals can access the notebooks.
 
 ## Fairing
