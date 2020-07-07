@@ -7,7 +7,7 @@ How does Alembic work?
 # SQLAlchemy
 - What are ORMs and why are they cool?
 
-Object-relational-mapping is the idea of being able to write queries using the object-oriented paradigm of your preferred programming language. So, ORMs (object relational mappers) are basically libraries that try to implement this functionality in your choice of programming language.
+Object-relational-mapping is the idea of being able to write queries using the object-oriented paradigm of your preferred programming language. So, ORMs (object relational mappers) are basically libraries that try to implement this functionality in your choice of programming language. Examples are : [SQLAlchemy](https://www.sqlalchemy.org/),[Django ORM](https://www.fullstackpython.com/django-orm.html)
    - why are ORMs cool: 
      - You get to write in the language you are already using anyway.
      - Abstraction : It abstracts away the database system so that switching from MySQL to PostgreSQL for example, becomes easy.
