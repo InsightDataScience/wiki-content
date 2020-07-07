@@ -1,5 +1,12 @@
+SQLAlchemy and Alembic
+
+What are ORMs and why are they cool?
+What specific challenges do they solve (ie migrations)?
+How does Alembic work?
+
 # Sample Page 
 Duplicate this page when creating a new wiki entry. 
+
 
 Write an introduction for the topic you are covering. Think about what information does a user need to know to understand the fundamentals of the topic. Diagrams and flowcharts are a plus. 
 
