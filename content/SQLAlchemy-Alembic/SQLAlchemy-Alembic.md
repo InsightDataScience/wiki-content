@@ -13,6 +13,9 @@ Object-relational-mapping is the idea of being able to write queries using the o
      - Abstraction : It abstracts away the database system so that switching from MySQL to PostgreSQL for example, becomes easy.
      - Depending on the ORM you get a lot of advanced features such as support for transactions, connection pooling, migrations(schema), seeds, streams, etc
      - Optimization: Many of the queries you write will perform better than if you wrote them yourself.
+   - what problems to ORMs solve?
+     - ORM implementation classes know how to write vendor-specific SQL, so you don't have to.
+     - (From DevOps perspective)Deployment: Pushing the app that can roll out its own database schema from its own code is a modern approach when everything including infrastructure should be a code.
    
 
 Duplicate this page when creating a new wiki entry. 
