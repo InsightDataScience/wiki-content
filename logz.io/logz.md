@@ -2,7 +2,7 @@
 
 Logz.io is a cloud observability platform providing Log Management built on the ELK Stack, Infrastructure Monitoring based on Grafana, and an ELK-based Cloud SIEM. The platform makes monitoring, troubleshooting, and securing applications much easier and much more scalable than the traditional ELK Stack.
 
-![Image of Dashboard](assets/logz-dashboard.png)
+![Image of Dashboard](assets/logz-dashboard.gif)
 
 ## Overview
 
