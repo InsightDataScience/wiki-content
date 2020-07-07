@@ -4,7 +4,8 @@ What are ORMs and why are they cool?
 What specific challenges do they solve (ie migrations)?
 How does Alembic work?
 
-# Sample Page 
+# SQLAlchemy
+- What are ORMs and why are they cool?
 Duplicate this page when creating a new wiki entry. 
 
 
