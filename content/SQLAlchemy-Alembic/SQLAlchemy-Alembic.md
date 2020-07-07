@@ -66,6 +66,7 @@ Base.metadata.create_all(engine)
 - [Basic tutorial from tutorialspoint](https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_introduction.htm)
     - This tutorial gives simple examples for using SQLAlchemy for queries,joins deletes etc. and then mentions how to declare tables in class format , creating sessions and adding objects etc.
 - [This ](https://docs.sqlalchemy.org/en/13/orm/tutorial.html)is official SQLAlchemy tutorial mentioning basic details like Querying , join , sessions etc.
+-[This article] mentions all the resources related to using SQLAlchemy with other application frameworks like Flask.
 
 
 ## Pain Points 
