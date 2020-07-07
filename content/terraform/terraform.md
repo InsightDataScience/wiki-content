@@ -3,7 +3,6 @@
 Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
 
 ## Overview
----
 
 Terraform is the most popular cloud resource provisioning toolset in use today. It is the most important tool to use when deploying infrastructure on the cloud.
 
@@ -18,7 +17,6 @@ Writing terraform is in all honesty pretty straightforward with all the examples
 The hard part about terraform is when your project grows and needs to integrate with a lot of different systems. This means that you might have an application running on a webserver but need to dynamically pull in information about the systems it touches which requires a little strategizing. For instance lets say you are in charge of running a webserver in a large deployment. You are not in charge of the network but your webserver needs to be deployed in 5 different VPCs. You can't hard code those VPCs because you don't want to look them up each time you deploy, thus you need to pull the vpc_id in dynamically.  In short, small deployments that you don't plan on changing much are pretty simple because you can put everything in one place.  Large deployments on the other hand require a little thought less you want to deal with a jungle of code.
 
 ## How to Use
----
 
 There are four basic commands to run Terraform.
 
@@ -43,7 +41,6 @@ For instance, if writing a module to deploy an Airflow instance, you would want 
 Writing actual Terraform code is out of scope of this wiki. Please refer to the following tutorials.
 
 ## Terraform Tutorials
----
 
 - [Insight's Terraform Tutorial](https://github.com/insight-infrastructure/terraform-aws-insight-tutorials)
     - This a multi-part lesson plan to go over the main parts of terraform
@@ -64,7 +61,6 @@ Writing actual Terraform code is out of scope of this wiki. Please refer to the 
 Anything that is not covered in these tutorials will be covered in the [docs](https://www.terraform.io/docs/index.html).
 
 ## Pain Points
----
 
 - **Rapid Development**
 
