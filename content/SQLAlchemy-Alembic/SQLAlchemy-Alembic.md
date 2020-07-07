@@ -19,7 +19,7 @@ Object-relational-mapping is the idea of being able to write queries using the o
    
 
 Duplicate this page when creating a new wiki entry. 
-
+![](https://www.fullstackpython.com/img/visuals/orm-examples.png)
 
 Write an introduction for the topic you are covering. Think about what information does a user need to know to understand the fundamentals of the topic. Diagrams and flowcharts are a plus. 
 
