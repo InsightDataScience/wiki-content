@@ -10,7 +10,7 @@ StatsD is originally a simple daemon developed and released by Etsy to aggregate
 
 Beyond the technical problem it solves—getting data from point A to point B efficiently—StatsD’s biggest contributions are organizational in nature. It allows for a culture where developers don’t have to ask anyone’s permission to instrument their application, where metrics are captured before applications are deployed in production, and where abstract performance or resource utilization metrics can be directly linked to application or product metrics that are directly relevant to the business.
 
-The general architecture of how the StatsD daemon captures metrics is shown below.
+The general architecture of how the StatsD daemon captures metrics is shown below.</br>
 
 ![Image of StatsD Architecture](assets/statsd_arch.png)
 
@@ -19,8 +19,8 @@ The general architecture of how the StatsD daemon captures metrics is shown belo
 ### Docker
 StatsD supports docker in two ways:
 
-The official docker image on [Docker Hub](https://hub.docker.com/r/statsd/statsd)
-Building the image from the bundled [Dockerfile](https://github.com/statsd/statsd/blob/master/Dockerfile)
+1. The official docker image on [Docker Hub](https://hub.docker.com/r/statsd/statsd)
+2. Building the image from the bundled [Dockerfile](https://github.com/statsd/statsd/blob/master/Dockerfile)
 
 ### Manual Installation
 1. Install Node.js (All Current and LTS Node.js versions are supported.)
@@ -36,7 +36,7 @@ The basic line protocol expects metrics to be sent in the format:
 <metricname>:<value>|<type>
 ```
 
-So the simplest way to send in metrics from your command line if you have StatsD running with the default UDP server on localhost would be:
+So the simplest way to send in metrics from your command line if you have StatsD running with the default UDP server on localhost is:
 
 ```
 echo "foo:1|c" | nc -u -w0 127.0.0.1 8125
@@ -54,4 +54,4 @@ echo "foo:1|c" | nc -u -w0 127.0.0.1 8125
 ## Pain Points
 
 - Backend Compatibility
-  - Insert Here
+  - The main backend for StatsD was originally intended to be Graphite. However, Etsy has developed more compatible monitoring backends in recent years. Nevertheless, there are still monitoring tools (i.e. Logz.io) that does not have compatibility to receive metrics from StatsD. In that case, creating a custom node exporter of StatsD metrics is necessary in the meantime.
