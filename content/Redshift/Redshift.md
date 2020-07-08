@@ -12,17 +12,21 @@ The heart of each Redshift deployment is a cluster. Each cluster has a leader no
 The Dense Compute (DC) nodes are meant for speed of query execution, with less storage, and is best for high performance activities. It is implemented with SSD drives. The Dense Storage (DS) nodes are for storing and querying big data, using typical hard disk drives.
 
 ## How to use 
-Outline common uses of this topic, focusing on real life deployments and explames. Link to articles and videos to provide more information. 
-
-Bonus points for making it Insight specific.
+As described in the step by step guide of official Amazon Redshift page, it involves:
+ - Step 1: Set Up Prerequisites
+ - Step 2: Launch a Sample Amazon Redshift Cluster
+ - Step 3: Authorize Access to the Cluster
+ - Step 4: Connect to the Sample Cluster (It is important to select the right connector, e.g.JDBC,ODBC,...)
 
 
 ## Resources 
 - Medium article: Amazon Redshift: Data Warehousing for the Masses [Link](https://medium.com/intermix-io/amazon-redshift-data-warehousing-for-the-masses-ea1642dc63ea)
+- Amazon Documentation: Getting Started [Link] (https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html)
+- Amazon Documentation: List of all JDBC connectors per version [Link](http://docs.aws.amazon.com/redshift/latest/mgmt/configure-jdbc-connection.html)
 
 
 ## Pain Points 
-- Identify current problems and paint points surround this topic / tool. What problems are people looking to solve around or with this topic/tool?
+- TBD
 - 
 
 
