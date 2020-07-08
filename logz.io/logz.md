@@ -40,4 +40,4 @@ With Cloud SIEM, you can leverage security rules and dashboards dedicated to ide
 
 - Log Shipping Compatibility & Troubleshooting
   - Logz.io is a powerful tool for shipping logs and metrics from different data sources. However, because Logz.io is relatively a new tool, certain logs, such as AWS Redshift, CloudTrail, etc. are not directly able to be shipped to Logz.io's Kibana-based monitoring. It is necessary in these situation to use a powerful tool known as [Beats](https://logz.io/tag/beats/) to make shipping log files much easier.
-  - The process of getting logs from your system to Logz.io can be tricky, and it can be difficult to pinpoint the exact issue. To help with any troubleshooting issues, visit Logz.io's [Log Shipping Troubleshooting Page](https://docs.logz.io/user-guide/log-shipping/log-shipping-troubleshooting.html)
+  - The process of getting logs from your system to Logz.io can be tricky, and it can be difficult to pinpoint the exact issue. To help with any troubleshooting issues, visit Logz.io's [Log Shipping Troubleshooting Page](https://docs.logz.io/user-guide/log-shipping/log-shipping-troubleshooting.html).
