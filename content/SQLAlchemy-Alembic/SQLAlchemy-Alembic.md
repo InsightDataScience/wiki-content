@@ -73,11 +73,5 @@ Base.metadata.create_all(engine)
 
 
 ## Pain Points 
-Identify current problems and paint points surround this topic / tool. What problems are people looking to solve around or with this topic/tool?
-
-Example:
-- **Something painful about this topic**
-This is really annoying when it happens.  The reason for it is people need to write better code.  In order to get around it, write better code.
-
-
+SQLAlchemy is an open source library which still has some bugs and upgrades with alembic tend to have restrictions about which schema changes can be done with that.
 
