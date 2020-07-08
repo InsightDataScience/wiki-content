@@ -2,7 +2,7 @@
 
 Logz.io is a cloud observability platform providing Log Management built on the ELK Stack, Infrastructure Monitoring based on Grafana, and an ELK-based Cloud SIEM. The platform makes monitoring, troubleshooting, and securing applications much easier and much more scalable than the traditional ELK Stack.
 
-![Image of Dashboard](assets/logz-dashboard.png)
+![Image of Dashboard](assets/logz-dashboard.gif)
 
 ## Overview
 
@@ -30,9 +30,14 @@ With Cloud SIEM, you can leverage security rules and dashboards dedicated to ide
 ## Resources
 
 - [The Complete Logz.io Documentation](https://docs.logz.io/)
+  - An in-depth tutorial about Logz.io's infrastructure and use cases
 - [How to Enable Server Monitoring with Logz.io](https://logz.io/blog/server-monitoring/)
+  - A helpful guide on how to setup server monitoring with Logz.io
 - [Shipping Your Logs to Logz.io with Filebeat](https://logz.io/blog/shipping-logs-filebeat/)
+  - How to connect logs from third-party apps to Filebeat for log shipping to Logz.io
 
 ## Pain Points
 
-- Insert Here
+- Log Shipping Compatibility & Troubleshooting
+  - Logz.io is a powerful tool for shipping logs and metrics from different data sources. However, because Logz.io is relatively a new tool, certain logs, such as AWS Redshift, CloudTrail, etc. are not directly able to be shipped to Logz.io's Kibana-based monitoring. It is necessary in these situation to use a powerful tool known as [Beats](https://logz.io/tag/beats/) to make shipping log files much easier.
+  - The process of getting logs from your system to Logz.io can be tricky, and it can be difficult to pinpoint the exact issue. To help with any troubleshooting issues, visit Logz.io's [Log Shipping Troubleshooting Page](https://docs.logz.io/user-guide/log-shipping/log-shipping-troubleshooting.html).
