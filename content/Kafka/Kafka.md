@@ -46,10 +46,7 @@ In Kafka the communication between the clients and the servers is done with a si
 
 ## Architecture of Kafka
 
-
-
-![](images/kafka_clusters.png "Kafka Cluster Overview")
-
+![](images/kafka_cluster.png "Kafka Cluster Overview")
 
 
 Kafka consists of Records, Topics, Consumers, Producers, Brokers, Logs, Partitions, and Clusters. Records can have key (optional), value and timestamp. Kafka Records are immutable. A Kafka Topic is a stream of records ("/orders", "/user-signups"). You can think of a Topic as a feed name. A topic has a Log which is the topic’s storage on disk. A Topic Log is broken up into partitions and segments. The Kafka Producer API is used to produce streams of data records. The Kafka Consumer API is used to consume a stream of records from Kafka. A Broker is a Kafka server that runs in a Kafka Cluster. Kafka Brokers form a cluster. The Kafka Cluster consists of many Kafka Brokers on many servers. Broker sometimes refer to more of a logical system or as Kafka as a whole.
