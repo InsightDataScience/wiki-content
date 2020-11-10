@@ -1,8 +1,8 @@
-# Helm Charts
-A helm chart is organized as a collection of files inside of a directory.
+# Helm 
+
+Helm is a tool for managing Charts. Helm Charts are packages of pre-configured Kubernetes resources. It is basically a package manager for Kubernetes.  
 
 ## Helm
-Helm is a tool for managing Charts. Helm Charts are packages of pre-configured Kubernetes resources.
 
 Use Helm to:
 
@@ -13,6 +13,7 @@ Use Helm to:
 5. Manage the release cycle of charts that have been installed with Helm
 
 ## Charts
+
 Helm uses a packaging format called charts. A chart is a collection of files that describe a related set of Kubernetes resources. A single chart might be used to deploy something simple, like a memcached pod, or something complex, like a full web app stack with HTTP servers, databases, caches, and so on. Charts are created as files laid out in a particular directory tree. They can be packaged into versioned archives to be deployed.
 
 ### Why use Helm Charts
@@ -27,7 +28,8 @@ Helm uses a packaging format called charts. A chart is a collection of files tha
 
 ## Installing Helm and Helm Charts
 
-### Helm
+### Helm Client 
+
 Check [here](https://helm.sh/docs/intro/) for basic Helm installation directions.
 
 ### Helm Charts
@@ -39,7 +41,8 @@ After installing Helm, you can easily install helm charts from the official repo
 A helm chart is organized as a collection of files inside of a directory.
 
 Inside of this directory, Helm will expect a structure that matches this:
-```
+
+```shell script
 application/
   Chart.yaml          # A YAML file containing information about the chart
   LICENSE             # OPTIONAL: A plain text file containing the license for the chart
@@ -52,11 +55,14 @@ application/
                       # will generate valid Kubernetes manifest files.
   templates/NOTES.txt # OPTIONAL: A plain text file containing short usage notes
 ```
+
 Helm reserves use of the charts/, crds/, and templates/ directories, and of the listed file names. Other files will be left as they are.
 
 ## Chart.yaml File Structure
+
 The `Chart.yaml` file is required for a chart. It contains the following fields:
-```
+
+```yaml
 apiVersion: The chart API version (required)
 name: The name of the chart (required)
 version: A SemVer 2 version (required)
