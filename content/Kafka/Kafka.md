@@ -22,8 +22,6 @@ First a few concepts:
 - The Kafka cluster stores streams of records in categories called topics.
 - Each record consists of a key, a value, and a timestamp.
 
-
-
 ![](images/kafka_overview.png "Overview of Kafka")
 
 
@@ -39,27 +37,17 @@ Kafka has five core APIs:
 
 - The Admin API: allows managing and inspecting topics, brokers and other Kafka objects
 
-
 In Kafka the communication between the clients and the servers is done with a simple, high-performance, language agnostic TCP protocol. This protocol is versioned and maintains backwards compatibility with older versions
-
-
 
 ## Architecture of Kafka
 
 ![](images/kafka_cluster.png "Kafka Cluster Overview")
-
 
 Kafka consists of Records, Topics, Consumers, Producers, Brokers, Logs, Partitions, and Clusters. Records can have key (optional), value and timestamp. Kafka Records are immutable. A Kafka Topic is a stream of records ("/orders", "/user-signups"). You can think of a Topic as a feed name. A topic has a Log which is the topic’s storage on disk. A Topic Log is broken up into partitions and segments. The Kafka Producer API is used to produce streams of data records. The Kafka Consumer API is used to consume a stream of records from Kafka. A Broker is a Kafka server that runs in a Kafka Cluster. Kafka Brokers form a cluster. The Kafka Cluster consists of many Kafka Brokers on many servers. Broker sometimes refer to more of a logical system or as Kafka as a whole.
 
 A Kafka cluster is made up of multiple Kafka Brokers. Each Kafka Broker has a unique ID (number). Kafka Brokers contain topic log partitions. Connecting to one broker bootstraps a client to the entire Kafka cluster. For failover, you want to start with at least three to five brokers. A Kafka cluster can have, 10, 100, or 1,000 brokers in a cluster if needed.
 
 Kafka uses ZooKeeper to manage the cluster. ZooKeeper is used to coordinate the brokers/cluster topology. ZooKeeper is a consistent file system for configuration information. ZooKeeper gets used for leadership election for Broker Topic Partition Leaders.
-
-
-
-
-## Use Cases
-
 
 ### Messaging
 
@@ -91,18 +79,13 @@ Many people use Kafka as a replacement for a log aggregation solution. Log aggre
 
 Many users of Kafka process data in processing pipelines consisting of multiple stages, where raw input data is consumed from Kafka topics and then aggregated, enriched, or otherwise transformed into new topics for further consumption or follow-up processing. For example, a processing pipeline for recommending news articles might crawl article content from RSS feeds and publish it to an "articles" topic; further processing might normalize or deduplicate this content and publish the cleansed article content to a new topic; a final processing stage might attempt to recommend this content to users. Such processing pipelines create graphs of real-time data flows based on the individual topics. Starting in 0.10.0.0, a light-weight but powerful stream processing library called Kafka Streams is available in Apache Kafka to perform such data processing as described above. Apart from Kafka Streams, alternative open source stream processing tools include Apache Storm and Apache Samza.
 
-
 ### Event Sourcing
 
 Event sourcing is a style of application design where state changes are logged as a time-ordered sequence of records. Kafka's support for very large stored log data makes it an excellent backend for an application built in this style.
 
-
 ### Commit Log
 
 Kafka can serve as a kind of external commit-log for a distributed system. The log helps replicate data between nodes and acts as a re-syncing mechanism for failed nodes to restore their data. The log compaction feature in Kafka helps support this usage. In this usage Kafka is similar to Apache BookKeeper project.
-
-
-
 
 ## Resources 
 
@@ -151,16 +134,10 @@ Some key features of confluent operator include:
 The following shows the high-level architecture of Operator and Confluent Platform components in a Kubernetes cluster.
 
 
-
 ![](images/architecture.png "high-level architecture of Operator and Confluent Platform components in a Kubernetes cluster.")
 
 
-
-
 ## Pain Points 
-
-- **Machine Requirments**
-Confluent operator must require adequate disk, number of cpu's to run. So a 10 node EKS cluster was found to be successful in my project case. The EC-2 instances which were t2.large instances.
 
 - **Exposing the service as a Load Balancer**
 To connect with the kafka brokers externally , it is important to correctly configure the external IP's in the file.

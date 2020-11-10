@@ -25,6 +25,8 @@ The Docker-compose file should have at least one service, and optionally volumes
     Similarly, networks define the communication rules between containers, and between a container and the host. Common network zones will make containers' services discoverable by each other, while private zones will segregate them in virtual sandboxes.
 
 
+## Resources 
+
 Here are few links which can be referred for examples and further details:
 
 * [Source 1](https://www.baeldung.com/docker-compose)
